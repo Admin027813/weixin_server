@@ -1,4 +1,4 @@
-package weixin_server.my;
+package com.my;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

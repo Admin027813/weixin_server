@@ -1,4 +1,4 @@
-package weixin_server.my.exception;
+package com.my.exception;
 
 import lombok.Data;
 

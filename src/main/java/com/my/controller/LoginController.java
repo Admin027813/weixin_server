@@ -1,4 +1,4 @@
-package weixin_server.my.controller;
+package com.my.controller;
 
 import com.baomidou.mybatisplus.extension.api.R;
 import io.swagger.annotations.Api;

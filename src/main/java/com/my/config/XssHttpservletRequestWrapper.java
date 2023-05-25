@@ -1,4 +1,4 @@
-package weixin_server.my.config;
+package com.my.config;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HtmlUtil;

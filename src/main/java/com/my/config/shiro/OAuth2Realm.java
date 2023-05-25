@@ -1,4 +1,4 @@
-package weixin_server.my.config.shiro;
+package com.my.config.shiro;
 
 
 import org.apache.shiro.authc.AuthenticationException;
@@ -12,6 +12,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+//自定义的Realm对象，用于连接数据，进行认证和授权。
 @Component
 public class OAuth2Realm extends AuthorizingRealm {
 

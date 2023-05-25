@@ -1,20 +1,20 @@
-package weixin_server.my.config.shiro;
+package com.my.config.shiro;
 
 import cn.hutool.core.date.DateField;
 import cn.hutool.core.date.DateUtil;
-import cn.hutool.jwt.JWTUtil;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTCreator;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
+import com.my.exception.ExceptionThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import weixin_server.my.exception.ExceptionThrows;
 
 import java.util.Date;
 
+//JWT的工具类，用于decode，encode和识别token
 @Component
 @Slf4j
 public class JwtUtil {
@@ -24,7 +24,7 @@ public class JwtUtil {
      //过期时间（天）
     @Value("${emos.jwt.expire}")
     private int expire;
-    public String createToken(int userId) {
+    public String createToken(Long userId) {
             Date date = DateUtil.offset(new Date(), DateField.DAY_OF_YEAR,
                     expire).toJdkDate();
             Algorithm algorithm = Algorithm.HMAC256(secret); //创建加密算法对象

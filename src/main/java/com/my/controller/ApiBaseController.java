@@ -1,4 +1,4 @@
-package weixin_server.my.controller;
+package com.my.controller;
 
 import cn.hutool.http.HttpStatus;
 import com.baomidou.mybatisplus.extension.api.R;

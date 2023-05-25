@@ -1,4 +1,4 @@
-package weixin_server.my.config;
+package com.my.config;
 
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;

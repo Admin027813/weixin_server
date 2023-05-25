@@ -1,8 +1,9 @@
-package weixin_server.my.config.shiro;
+package com.my.config.shiro;
 
 import lombok.Data;
 import org.apache.shiro.authc.AuthenticationToken;
 
+//自定义的token类，用以代替shiro原生的UsernamePasswordToken
 @Data
 public class OAuth2Token implements AuthenticationToken {
     private String token;
@@ -13,11 +14,11 @@ public class OAuth2Token implements AuthenticationToken {
 
     @Override
     public Object getPrincipal() {
-        return null;
+        return token;
     }
 
     @Override
     public Object getCredentials() {
-        return null;
+        return token;
     }
 }

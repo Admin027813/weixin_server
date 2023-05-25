@@ -1,7 +1,8 @@
-package weixin_server.my.config.shiro;
+package com.my.config.shiro;
 
 import org.springframework.stereotype.Component;
 
+//保存token类
 @Component
 public class ThreadLocalToken {
     private final ThreadLocal<String> local = new ThreadLocal();

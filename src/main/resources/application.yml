@@ -53,11 +53,11 @@ logging:
     org.mybatis: DEBUG
     com.econ.powercloud: DEBUG
 
-    emos:
-    2. jwt:
-    3. #密钥
-    4. secret: abc123456
-    5. #令牌过期时间（天）
-    6. expire: 5
-    7. #令牌缓存时间（天数）
-    8. cache-expire: 10
+emos:
+  jwt:
+    #密钥
+    secret: abc123456
+    #令牌过期时间（天）
+    expire: 5
+    #令牌缓存时间（天数）
+    cache-expire: 10
